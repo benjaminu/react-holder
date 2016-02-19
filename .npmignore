@@ -1,5 +1,7 @@
+.babelrc
+.editorconfig
+.eslintrc
 .gitignore
+.travis.yml
 node_modules
 src
-test
-gulpfile.js
