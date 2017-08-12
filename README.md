@@ -1,6 +1,6 @@
-# react-holder
+# react-holder-component
 
-*forked from Ramesh Nair's [react-image-holder](https://github.com/hiddentao/react-image-holder).*
+*forked from Dieter Luypaert's [react-holder](https://github.com/Moeriki/react-holder).*
 
 A `<Holder />` component for React which can render placeholders as provided by [holder-js](https://github.com/imsky/holder).
 
@@ -9,13 +9,13 @@ A `<Holder />` component for React which can render placeholders as provided by 
 ## Install
 
 ```shell
-npm install react-holder
+npm install react-holder-component
 ```
 
 ## Usage
 
 ```javascript
-import Holder from 'react-holder'
+import Holder from 'react-holder-component'
 
 export class Logo extends Component {
   render() {
@@ -50,7 +50,7 @@ npm run build
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](https://github.com/moeriki/react-holder/blob/master/CONTRIBUTING.md).
+Contributions are welcome! Please see [CONTRIBUTING.md](https://github.com/benjaminu/react-holder-component/blob/master/CONTRIBUTING.md).
 
 ## License
 
