@@ -23,7 +23,7 @@ const HOLDER_ATTR_NAMES = [
 
 const REGEX_PERCENTAGE = /\d+(%|p)/;
 
-const REGEX_PX = /\d+px%/;
+const REGEX_PX = /\d+px/;
 
 const REGEX_NUMBER = /\d+/;
 
@@ -48,12 +48,12 @@ function sanitizeSizeValue (size) {
     stringSize = String(stringSize);
   }
 
-  if (REGEX_PERCENTAGE.test(stringSize)) {
-    return `${sanitizeNumber(stringSize)}p`;
-  }
-
   if (REGEX_PX.test(stringSize)) {
     return sanitizeNumber(stringSize);
+  }
+
+  if (REGEX_PERCENTAGE.test(stringSize)) {
+    return `${sanitizeNumber(stringSize)}p`;
   }
 
   if (REGEX_NUMBER.test(stringSize)) {
@@ -73,6 +73,7 @@ function createPlaceholder (node, updateOnResize = SHOULD_UPDATE_ON_RESIZE_DEFAU
     bgnodes: null,
     stylenodes: null
   });
+
   if (updateOnResize === false) {
     holderjs.setResizeUpdate(node, false);
   }

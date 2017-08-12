@@ -24,7 +24,7 @@ export class Logo extends Component {
         <Holder
           // width and height can be a number or a string
           width="100%"
-          height="200"
+          height="200px"
 
           // default: false
           updateOnResize={true}
