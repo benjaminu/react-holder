@@ -10,14 +10,14 @@
   ],
   "author": "Benjamin Ugbene <benjamin.ugbene@googlemail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/benjaminu/react-holder",
+  "homepage": "https://github.com/benjaminu/react-holder-component",
   "bugs": {
-    "url": "https://github.com/benjaminu/react-holder/issues"
+    "url": "https://github.com/benjaminu/react-holder-component/issues"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/benjaminu/react-holder.git"
+    "url": "https://github.com/benjaminu/react-holder-component.git"
   },
   "scripts": {
     "pretest": "eslint index.js src/",
