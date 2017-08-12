@@ -23,9 +23,11 @@
     "pretest": "eslint index.js src/",
     "test": "echo 'no tests'",
     "build": "babel src/ --out-dir lib/",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "devDependencies": {
+    "@storybook/react": "^3.2.3",
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "babel-preset-es2015": "^6.5.0",
