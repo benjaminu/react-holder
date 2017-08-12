@@ -1,14 +1,14 @@
 {
-  "name": "react-holder",
+  "name": "react-holder-component",
   "version": "1.0.0",
-  "description": "React image Holder (with holder.js)",
+  "description": "React image Holder Component (with holder.js)",
   "keywords": [
     "react",
     "image",
     "placeholder",
     "holder.js"
   ],
-  "author": "Dieter Luypaert <dieterluypaert@gmail.com>, Benjamin Ugbene <benjamin.ugbene@googlemail.com>",
+  "author": "Benjamin Ugbene <benjamin.ugbene@googlemail.com>",
   "license": "MIT",
   "homepage": "https://github.com/benjaminu/react-holder",
   "bugs": {
