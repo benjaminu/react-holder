@@ -1,0 +1,54 @@
+{
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "react": {
+      "createClass": "createReactClass", // Regex for Component Factory to use, default to "createReactClass"
+      "pragma": "React", // Pragma to use, default to "React"
+      "version": "15.0" // React version, default to the latest React stable release
+    },
+    "propWrapperFunctions": ["forbidExtraProps"] // The names of any functions used to wrap the propTypes object, such as `forbidExtraProps`. If this isn't set, any propTypes wrapped in a function will be skipped.
+  },
+  "ecmaFeatures": {
+    "jsx": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    // enable additional rules
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+
+    // override default options for rules from base configurations
+    "comma-dangle": ["error", "never"],
+    "no-cond-assign": ["error", "always"],
+    "no-console": "off",
+
+    // disable rules from base configurations
+    "react/jsx-filename-extension": "off",
+    "import/prefer-default-export": "off",
+    "react/prefer-stateless-function": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/forbid-prop-types": "off"
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "navigator": true,
+    "URL": true,
+    "localStorage": true
+  }
+}
